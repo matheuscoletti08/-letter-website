@@ -9,13 +9,13 @@
 body {
     height: 100vh;
     background-color: black;
-
 }
 
 .container {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    height: 100vh;
 }
 
 .romanticText {
@@ -28,7 +28,26 @@ h2 {
 }
 
 .romanticText{
+    margin: 0 auto;
+    width: 85%;
     font-size: 16px;
+}
+
+.textPhotos{
+    margin-bottom: 34px;
+}
+
+.photos{
+    flex-wrap: wrap;
+    margin: 0 auto 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+}
+
+img{    
+    margin-bottom: 34px;
+    height: 250px;
 }
 
 .clickableDiv {
@@ -43,7 +62,7 @@ h2 {
     line-height: 50px;
     cursor: pointer;
     transition: 0.2s;
-    margin-top: 400px;
+    margin: auto; /* Adiciona margem automática para centralizar */
 }
 
 .clickableDiv:hover {
@@ -57,6 +76,7 @@ h2 {
 }
 
 .hiddenText {
+    height: 100vh;
     text-align: justify;
     text-justify: distribute;
     display: none;

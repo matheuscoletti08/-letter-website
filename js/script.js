@@ -11,6 +11,12 @@ function toggleText() {
   }
 }
 
+function exibirTexto(texto) {
+  hiddenText.innerHTML = `<br><h2>Descrição da Foto</h2><br><p>${texto}</p><hr>`;
+  hiddenText.style.display = 'block';
+  clickableDiv.style.display = 'none';
+}
+
 window.onload = function() {
   hiddenText.style.display = 'none';
 };
