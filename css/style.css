@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    font-family: Ubuntu, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.romanticText {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.romanticText{
+    font-size: 16px;
+}
+
+.clickableDiv {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #663b94;
+    border: solid 0.2em #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 400px;
+}
+
+.clickableDiv:hover {
+    width: 220px;
+    height: 70px;
+    font-size: 22px;
+    line-height: 70px;
+    outline: none;
+    border: solid 0.02em #ffffff;
+    box-shadow: 0 0 40px #ffffff;
+}
+
+.hiddenText {
+    text-align: justify;
+    text-justify: distribute;
+    display: none;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.textPhotos {
+    font-size: 18px;
+    text-align: center;
+    text-justify: distribute;
+}
+
+hr {
+    border: 2px solid #202020;
+    border-radius: 20px;
+}
