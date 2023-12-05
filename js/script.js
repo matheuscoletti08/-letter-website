@@ -12,21 +12,18 @@ function toggleText() {
 }
 
 
-let senhaCorreta = 'amor';
+const senhasCorretas = ['amor', 'nana', 'naty', 'Nana', 'Naty', 'Amor'];
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Evita o envio automático do formulário
+    event.preventDefault(); 
 
-  let password = document.getElementById('password').value;
+    const password = document.getElementById('password').value;
 
-  if (password === senhaCorreta) {
-      document.getElementById('loginSection').style.display = 'none'; 
-      document.getElementById('hiddenText').style.display = 'block';
-  } else {
-      document.getElementById('loginMessage').innerText = 'Senha incorreta. Tente novamente.';
-  }
-});
 
-document.getElementById('password').addEventListener('touchstart', function(event) {
-  event.preventDefault();
+    if (senhasCorretas.includes(password)) {
+        document.getElementById('loginSection').style.display = 'none';
+        document.getElementById('hiddenText').style.display = 'block';
+    } else {
+        document.getElementById('loginMessage').innerText = 'Senha incorreta. Tente novamente.';
+    }
 });
