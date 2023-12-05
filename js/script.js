@@ -12,26 +12,24 @@ function toggleText() {
 }
 
 // Senhas corretas para o login (substitua com as senhas desejadas)
-const senhasCorretas = ['amor', 'coletti', 'nataly'];
+let senhaCorreta = 'amor';
 
 // Função para validar o login
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita o envio do formulário
-    const password = document.getElementById('password').value;
-    validaSenha(password);
+  event.preventDefault(); // Evita o envio automático do formulário
+
+  let password = document.getElementById('password').value;
+
+  // Verifica se a senha fornecida corresponde à senha correta
+  if (password === senhaCorreta) {
+      document.getElementById('loginSection').style.display = 'none'; // Esconde a seção de login
+      document.getElementById('hiddenText').style.display = 'block'; // Mostra o conteúdo após o login bem-sucedido
+  } else {
+      document.getElementById('loginMessage').innerText = 'Senha incorreta. Tente novamente.';
+  }
 });
 
-document.getElementById('loginForm').addEventListener('touchstart', function(event) {
-    event.preventDefault(); // Evita o evento de toque padrão
-    const password = document.getElementById('password').value;
-    validaSenha(password);
+// Adiciona manipulador de eventos de toque (touchstart) para o campo de senha
+document.getElementById('password').addEventListener('touchstart', function(event) {
+  event.preventDefault(); // Evita o comportamento padrão do evento de toque
 });
-
-function validaSenha(password) {
-    if (senhasCorretas.includes(password)) {
-        document.getElementById('loginSection').style.display = 'none'; // Esconde a seção de login
-        document.getElementById('hiddenText').style.display = 'block'; // Mostra o conteúdo após o login bem-sucedido
-    } else {
-        document.getElementById('loginMessage').innerText = 'Senha incorreta. Tente novamente.';
-    }
-}
