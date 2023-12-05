@@ -97,12 +97,6 @@ button:hover {
     color: #ffffff;
 }
 
-.textPhotos {
-    font-size: 18px;
-    text-align: center;
-    text-justify: distribute;
-}
-
 hr {
     border: 2px solid #202020;
     border-radius: 20px;
