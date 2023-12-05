@@ -31,7 +31,7 @@ h2 {
 .romanticText, .textPhotos, .textTip{
     color: #fff;
     margin: 0 auto;
-    width: 85%;
+    width: 90%;
     font-size: 16px;
 }
 
@@ -42,7 +42,7 @@ h2 {
 .photos{
     flex-wrap: wrap;
     margin: 0 auto 0 auto;
-    width: 85%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
 }
