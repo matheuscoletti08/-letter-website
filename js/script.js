@@ -12,7 +12,7 @@ function toggleText() {
 }
 
 
-const senhasCorretas = ['amor', 'nana', 'naty', 'Nana', 'Naty', 'Amor'];
+const senhasCorretas = ['amor', 'nana', 'naty', 'Nana', 'Naty', 'Amor', 'admin'];
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
