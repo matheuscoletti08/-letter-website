@@ -35,6 +35,11 @@ h2 {
     font-size: 16px;
 }
 
+.textTip{
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+}
+
 .textPhotos{
     margin-bottom: 35px;
 }
