@@ -53,13 +53,16 @@ img{
 
 input[type="password"]{
     border-radius: 12px;
-    margin-bottom: 10px;
+    height: 30px;
     width: 100%;
-    padding: 8px;
 }
 
 label {
     font-size: 18px;
+    color: #fff;
+}
+
+#loginMessage{
     color: #fff;
 }
 
