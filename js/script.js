@@ -11,12 +11,20 @@ function toggleText() {
   }
 }
 
-function exibirTexto(texto) {
-  hiddenText.innerHTML = `<br><h2>Descrição da Foto</h2><br><p>${texto}</p><hr>`;
-  hiddenText.style.display = 'block';
-  clickableDiv.style.display = 'none';
-}
+// Senhas corretas para o login (substitua com as senhas desejadas)
+const senhasCorretas = ['amor', 'coletti', 'nataly'];
 
-window.onload = function() {
-  hiddenText.style.display = 'none';
-};
+// Função para validar o login
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita o envio do formulário
+
+    const password = document.getElementById('password').value;
+
+    // Verifica se a senha fornecida corresponde a alguma das senhas corretas na lista
+    if (senhasCorretas.includes(password)) {
+        document.getElementById('loginSection').style.display = 'none'; // Esconde a seção de login
+        document.getElementById('hiddenText').style.display = 'block'; // Mostra o conteúdo após o login bem-sucedido
+    } else {
+        document.getElementById('loginMessage').innerText = 'Senha incorreta. Tente novamente.';
+    }
+});
